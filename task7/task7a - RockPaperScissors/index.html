@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: roboto, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        h3 {
+            margin: 30px 0
+        }
+
+        .panel {
+            margin: 20px;
+        }
+
+        .panel-left,
+        .panel-right {
+            display: inline-block;
+            width: 48%;
+            overflow: hidden;
+            margin: 40px auto 0;
+            text-align: center;
+        }
+
+        .panel-left p {
+            font-size: 20px;
+        }
+
+        .panel h3 {
+            text-align: center;
+        }
+
+        h1,
+        h3 {
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+
+        .select {
+            overflow: hidden;
+            text-align: center;
+            margin: 0 auto;
+            max-width: 1000px;
+        }
+
+        .select img {
+            width: 200px;
+            margin: 20px;
+            display: inline-block;
+        }
+
+        button {
+            display: block;
+            padding: 5px 20px;
+            border: 2px solid black;
+            text-transform: uppercase;
+            background-color: white;
+            font-weight: bold;
+            margin: 10px auto;
+            transition: .3s;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: rgb(20, 20, 20);
+            color: white;
+        }
+
+        span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <H1>GAME "ROCK, PAPER, SCISSORS</H1>
+    <div class="select">
+        <h3>Please, choose:</h3>
+        <img data-option="rock" class="first" src="kamien.jpg" alt="" title="rock">
+        <img data-option="paper" src="papier.jpg" alt="" title="paper">
+        <img data-option="scissors" src="nozyczki.jpg" alt="" title="scissors">
+    </div>
+
+    <button class="start">Let's play!</button>
+
+    <div class="panel-left">
+        <h3>Game result</h3>
+        <p>Your choice: <span data-summary="your-choice"></span></p>
+        <p>Computer choice: <span data-summary="ai-choice"></span></p>
+        <h2>Game winner: <span data-summary="game-winner"></span></h2>
+    </div>
+
+    <div class="panel-right">
+        <h3>Acutal score</h3>
+        <p class="numbers">Number of games: <span>0</span></p>
+        <p class="wins">Number of wins: <span>0</span></p>
+        <p class="losses">Number of losses: <span>0</span></p>
+        <p class="draws">Number of draws: <span>0</span></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
