@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slots</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrap">
+
+        <h1>Slots</h1>
+
+        <section class="game">
+            <div class="color"></div>
+            <div class="color"></div>
+            <div class="color"></div>
+        </section>
+
+        <section class="play">
+            <input type="number" placeholder="Enter bid" id="bid">
+            <button id="start">Roll!</button>
+        </section>
+
+        <section class="panel">YOUR ACCOUNT BEFORE NEXT GAME: <span class="wallet"></span></section>
+
+        <section class="score">
+            <span class="result"></span> You played <span class="numberOfGames"></span> games, <span class="wins"></span> wins and <span class="losts"></span> losts.
+        </section>
+    </div>
+
+    <script src="js/Wallet.js"></script>
+    <script src="js/Statistics.js"></script>
+    <script src="js/Draw.js"></script>
+    <script src="js/Result.js"></script>
+    <script src="js/Game.js"></script>
+    <script src="js/Main.js"></script>
+</body>
+</html>
